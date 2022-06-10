@@ -1,0 +1,43 @@
+.play{
+    padding: 164px 0 88px 0;
+    position: relative;
+    &::before{
+        content: url("../img/bg-play.png");
+        position: absolute;
+        top:-68%;
+        left:0;
+        width: 90%;
+        height: 100%;
+        z-index: 3;
+    }
+    &__title{
+        position: relative;
+        z-index: 4;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: $main-color;
+        text-align: center;
+        margin: 0;
+    }  
+}
+
+.play__descr{
+    background: linear-gradient(180deg, #814128 0%, #292640 100%);
+    padding-top: 15px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_text{
+        max-width: 327px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: $main-color;
+    }
+}

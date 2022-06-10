@@ -1,4 +1,5 @@
 @import "libs/bootstrap-reboot.min";
+@import "libs/swiper-bundle.min";
 
 
 @import "../fonts/fonts";
@@ -10,12 +11,51 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
 
 .container{
     max-width: 1170px;
     margin: 0 auto;
 }
+.title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
+//Блоки
+@import "blocks/hero";
+@import "blocks/slider";
+@import "blocks/play";
 
 @import "media/media";

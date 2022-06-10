@@ -1,0 +1,124 @@
+.slider{
+    &__title{
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: $white;
+        margin-top: 80px;
+        text-align: center;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $white;
+        max-width: 794px;
+    }
+    &__block{
+        &__title{
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 51px;
+        }
+    }
+    .swiper{
+        min-height: 0;
+        max-height: 457px;
+        max-width: 1040px;
+        position: relative;
+        &-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            outline: none;
+            width: 80px;
+            height: 41px;
+            &::after{
+                display: none;
+            }
+        }
+        .swiper-slide{
+            img{
+                transition: all 0.6s;
+                transform: scale(50%);
+            }
+        }
+        .swiper-slide-prev, .swiper-slide-next, .swiper-slide-duplicate, .swiper-slide-duplicate-prev, .swiper-slide-duplicate-next{
+            img{
+                transition: all 0.6s;
+                transform: scale(50%) translateY(-50%);
+            }
+        }
+        .swiper-slide-active, .swiper-slide-duplicate-active{
+            img{
+                transition: all 0.6s;
+                transform: scale(100%) translateY(0);
+            }
+        }
+        .radio{
+            z-index: 10;
+            display: block;
+            position: absolute;
+            top:0;
+            left:0;
+            width: 71px;
+            height: 71px;
+            background: url("../img/slider/radio.png") center center /cover no-repeat;
+            
+        }
+        .r-1{
+            top:60px;
+            left:60%;
+            animation: r-1 10s linear infinite;
+            overflow: visible;
+        }
+        .r-2{
+            top:30px;
+            left: 30%;
+            animation: r-1 6s linear infinite;
+        }
+        .r-3{
+            top:163px;
+            left:35%;
+            animation: r-1 14s linear infinite;
+        }
+        @keyframes r-1 {
+
+            0%{
+                transform:rotate(0deg) translate(-40px) rotate(0deg);
+              
+              }
+              100%{
+                transform:rotate(360deg) translate(-40px) rotate(-360deg);
+              }
+        }
+
+        .swiper-button-prev{
+            top:80%;
+            left:22%;
+        }
+        .swiper-button-next{
+            top:80%;
+            right: 22%;
+        }
+    }
+    &__descr{
+        margin-top: 40px;
+        
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+        color: #6A6A6A;
+    }
+}
