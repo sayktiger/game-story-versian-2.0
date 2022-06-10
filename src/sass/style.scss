@@ -26,7 +26,7 @@ li{
 a{
     text-decoration: none;
 }
-p{
+p,h1,h2{
     margin: 0;
     padding: 0;
 }
@@ -57,5 +57,8 @@ p{
 @import "blocks/hero";
 @import "blocks/slider";
 @import "blocks/play";
+@import "blocks/road-map";
+@import "blocks/footer";
 
+//Адаптив
 @import "media/media";

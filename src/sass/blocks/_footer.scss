@@ -1,0 +1,96 @@
+.footer{
+    padding-top: 665px;
+    padding-bottom: 37px;
+    background: url("../img/bg-footer.png") top center /cover no-repeat,
+                url("../img/vector.png") center center /100% 100% no-repeat;
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        background: url("../img/footer/footer.png") top center /100% no-repeat;
+        padding-top: 37px;
+    }
+    &__logo{
+        a{
+            &:hover{
+                transition: all 0.3s;
+                img{
+                    transition: all 0.3s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        
+    }
+    &__menu{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 282px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &:nth-child(1){
+            margin-right: 45px;
+        }
+        &s{
+            text-align: left;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+            a{
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 19px;
+                color: $main-color;
+                transition: all 0.3s;
+                &:hover{
+                    text-decoration: none;
+                    color: rgba($color: $main-color, $alpha: 0.6);
+                    transform: translateY(-10px) skew(-25deg);
+                }
+            }
+        }
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &_block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            margin-bottom: 22px;
+        }
+        &_img{
+            transition: all 0.3s;
+            &:hover{
+                transform: translateY(-5px) rotate(-25deg);
+            }
+        }
+        
+    }
+   .btn{
+    background: url("../img/button.png");
+    width: 212px;
+    height: 52px;
+    margin-bottom: 73px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    outline: none;
+    color: $main-color;
+    border: none;
+    transition: all 0.3s;
+    &:hover{
+        color: rgba($color: $main-color, $alpha: 0.6);
+        transform: scale(1.1);
+    }
+   }
+}

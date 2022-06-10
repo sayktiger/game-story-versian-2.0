@@ -1,0 +1,172 @@
+.road-map{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.road-map__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.road-map__card{
+    padding: 62px 28px 62px 41px;
+    max-width: 339px;
+    max-height: 455px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    &:nth-child(1){
+        position: relative;
+        background: url("../img/roadmap/card-1.png") center center /100%  no-repeat;
+        &:before{
+            content: "";
+            background: url("../img/roadmap/card-1-1.png") center center /100%  no-repeat;
+            width: 116px;
+            height: 190px;
+            position: absolute;
+            top:0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        &:after{
+            content: "";
+            background: url("../img/roadmap/card-1-2.png") center center /100%  no-repeat;
+            width: 116px;
+            height: 190px;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        &:hover{
+            &:before{
+                top:-15%;
+                right: -15%;
+            }
+            &:after{
+                top:-20%;
+                left: -20%;
+            }
+        }
+    }
+    &:nth-child(2){
+        position: relative;
+        background: url("../img/roadmap/card-2.png") center center /100%  no-repeat;
+        &:before{
+            content: "";
+            background: url("../img/roadmap/card-2-2.png") center center /100%  no-repeat;
+            width: 116px;
+            height: 190px;
+            position: absolute;
+            bottom:0;
+            right: 25%;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        &:after{
+            content: "";
+            background: url("../img/roadmap/card-2-1.png") center center /100%  no-repeat;
+            width: 116px;
+            height: 190px;
+            position: absolute;
+            bottom:0;
+            left:0;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        .before{
+            &:before{
+                content: "";
+                background: url("../img/roadmap/card-2-3.png") center center /100%  no-repeat;
+                width: 220px;
+                height: 377px;
+                position: absolute;
+                top:0;
+                right:0;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+        }
+        &:hover{
+            .before{
+                &:before{
+                    top:-30%;
+                    right: -30%;
+                }
+            }
+            &:before{
+                bottom:-15%;
+                right: 15%;
+            }
+            &:after{
+                bottom:-5%;
+                left: -20%;
+            }
+        }
+    }
+    &:nth-child(3){
+        background: url("../img/roadmap/card-1.png") center center /100%  no-repeat;
+        position: relative;
+        &:before{
+            content: "";
+            background: url("../img/roadmap/card-3.png") center center /100%  no-repeat;
+            width: 134px;
+            height: 200px;
+            position: absolute;
+            top:0;
+            right: 0;
+            z-index: -1;
+            transition: all 0.3s;
+        }
+        
+        &:hover{
+            &:before{
+                top:15%;
+                right: -30%;
+            }
+        }
+    }
+    &_title{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 24px;
+        color: #6A6A6A;
+        text-align: center;
+        margin-bottom: 19px;
+    }
+    &_line{
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+    &_item{
+        &s{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #6A6A6A;
+            max-width: 254px;
+            max-height: 57px;
+            padding-left: 16px;
+            position: relative;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+            &::before{
+                content: url("../img/check.png");
+                position: absolute;
+                top:0;
+                left:0;
+            }
+        }
+    }
+}
